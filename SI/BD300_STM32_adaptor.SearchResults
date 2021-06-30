@@ -1,0 +1,11 @@
+---- CANSendBuffer_long Matches (10 in 3 files) ----
+Can.c (f:\work\bd300\bd300_stm32_adaptor\app\src):unsigned  char CANSendBuffer_long=0;//帧有效数据长度
+Can.c (f:\work\bd300\bd300_stm32_adaptor\app\src):	if(CANSendBuffer_long>0)
+Can.c (f:\work\bd300\bd300_stm32_adaptor\app\src):		if(CANSendBuffer_long>7)
+Can.c (f:\work\bd300\bd300_stm32_adaptor\app\src):			number_dec=CANSendBuffer_long; //=数据大于七个，
+Can.c (f:\work\bd300\bd300_stm32_adaptor\app\src):			for(number_dec=CANSendBuffer_long;number_dec>0;)
+Can.c (f:\work\bd300\bd300_stm32_adaptor\app\src):									for(i=0;i<CANSendBuffer_long;i++)
+Can.c (f:\work\bd300\bd300_stm32_adaptor\app\src):			 CANSendBuffer_long=0;					 
+Can.h (f:\work\bd300\bd300_stm32_adaptor\app\inc):extern unsigned  char CANSendBuffer_long;//帧有效数据长度
+Uart.c (f:\work\bd300\bd300_stm32_adaptor\app\src):						CANSendBuffer_long = 4+Data_long+2;
+Uart.c (f:\work\bd300\bd300_stm32_adaptor\app\src):			  		      for(i=0;i<CANSendBuffer_long;i++)
